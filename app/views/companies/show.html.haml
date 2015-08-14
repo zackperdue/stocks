@@ -1,0 +1,16 @@
+%h1= @company.symbol
+%h3= @company.name
+
+%p %#{@company.percent_change.round(3)}
+%p= @company.sector.name
+%p= @company.industry.name
+%p
+  = link_to @company.summary_quote, @company.summary_quote
+
+#chart{ data: { history: history_company_path(@company) } }
+
+%h3 Related Companies
+= render partial: 'companies/list', locals: { companies: @related }
+
+#news{ data: { news: "https://www.google.com/finance/company_news?q=#{@company.symbol}&output=rss" } }
+  = @company.news

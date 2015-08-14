@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  symbol: MyString
+  name: MyString
+  last_sale: 1.5
+  market_cap: 1.5
+  ipo_year: MyString
+  sector_id: 1
+  industry: MyString
+  summary_quote: MyString
+
+two:
+  symbol: MyString
+  name: MyString
+  last_sale: 1.5
+  market_cap: 1.5
+  ipo_year: MyString
+  sector_id: 1
+  industry: MyString
+  summary_quote: MyString

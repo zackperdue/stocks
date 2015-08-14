@@ -1,0 +1,8 @@
+= form_tag search_companies_path, method: :get do
+  = text_field_tag :q, nil, placeholder: 'Stock Ticker'
+  = button_tag 'Search'
+
+= render partial: 'companies/list', locals: { companies: @companies }
+%ul
+  - Sector.all.each do |sector|
+    %li= link_to sector.name, sector

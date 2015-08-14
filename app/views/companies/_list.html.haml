@@ -1,0 +1,10 @@
+%table
+  %thead
+    %tr
+      %th Ticker
+      %th Name
+  %tbody
+    - companies.each do |company|
+      %tr
+        %td= link_to company.symbol, company
+        %td= company.name
