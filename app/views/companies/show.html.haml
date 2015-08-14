@@ -13,4 +13,3 @@
 = render partial: 'companies/list', locals: { companies: @related }
 
 #news{ data: { news: "https://www.google.com/finance/company_news?q=#{@company.symbol}&output=rss" } }
-  = @company.news
